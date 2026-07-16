@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oxgpt"
+version = "0.1.0"
+description = "A local terminal AI assistant powered by Ollama."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [{ name = "OxGPT contributors" }]
+keywords = ["ai", "cli", "ollama", "terminal", "local"]
+classifiers = [
+  "Environment :: Console",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+]
+
+[project.scripts]
+oxgpt = "oxgpt.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["oxgpt*"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py39"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
