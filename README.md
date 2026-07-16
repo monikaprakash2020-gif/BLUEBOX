@@ -29,8 +29,8 @@ install OxGPT:
 ```sh
 mkdir BLUEBOX
 cd BLUEBOX
-git clone https://github.com/monikaprakash2020-gif/OxGPT.git OxG
-cd OxG
+git clone https://github.com/monikaprakash2020-gif/OxGPT.git OxGPT_v1.0
+cd OxGPT_v1.0
 python3 -m venv .venv
 . .venv/bin/activate
 python3 -m pip install .
@@ -46,8 +46,8 @@ pkg update
 pkg install git python
 mkdir BLUEBOX
 cd BLUEBOX
-git clone https://github.com/monikaprakash2020-gif/OxGPT.git OxG
-cd OxG
+git clone https://github.com/monikaprakash2020-gif/OxGPT.git OxGPT_v1.0
+cd OxGPT_v1.0
 python3 -m pip install --user .
 ```
 
