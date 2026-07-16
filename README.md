@@ -27,8 +27,10 @@ the [Ollama installation guide](https://ollama.com/download). Then clone and
 install OxGPT:
 
 ```sh
-git clone https://github.com/monikaprakash2020-gif/BLUEBOX.git
+mkdir BLUEBOX
 cd BLUEBOX
+git clone https://github.com/monikaprakash2020-gif/OxGPT.git OxG
+cd OxG
 python3 -m venv .venv
 . .venv/bin/activate
 python3 -m pip install .
@@ -42,8 +44,10 @@ and install OxGPT:
 ```sh
 pkg update
 pkg install git python
-git clone https://github.com/monikaprakash2020-gif/BLUEBOX.git
+mkdir BLUEBOX
 cd BLUEBOX
+git clone https://github.com/monikaprakash2020-gif/OxGPT.git OxG
+cd OxG
 python3 -m pip install --user .
 ```
 
