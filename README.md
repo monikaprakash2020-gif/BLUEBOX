@@ -20,16 +20,42 @@ ollama pull deepseek-r1:1.5b
 
 ## Install
 
-From a clone of this repository:
+### Linux
+
+Install Python, Git, and Ollama using your distribution's package manager and
+the [Ollama installation guide](https://ollama.com/download). Then clone and
+install OxGPT:
 
 ```sh
+git clone https://github.com/monikaprakash2020-gif/BLUEBOX.git
+cd BLUEBOX
+python3 -m venv .venv
+. .venv/bin/activate
 python3 -m pip install .
 ```
 
-For a user-local install (useful on Termux):
+### Termux
+
+Install the base tools from F-Droid or the official Termux source, then clone
+and install OxGPT:
 
 ```sh
+pkg update
+pkg install git python
+git clone https://github.com/monikaprakash2020-gif/BLUEBOX.git
+cd BLUEBOX
 python3 -m pip install --user .
+```
+
+Ollama must also be installed and running locally before starting OxGPT. If
+your Termux setup does not provide an `ollama` executable, use a Linux
+environment on the same device that does and make that executable available
+on your `PATH`.
+
+Verify the installation:
+
+```sh
+oxgpt --version
 ```
 
 ## Usage
