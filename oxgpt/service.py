@@ -80,3 +80,12 @@ def run(config: Config) -> None:
     finally:
         server.server_close()
         logging.info("OxGPT service stopped")
+
+
+def main() -> None:
+    """Run the OxGPT service using environment configuration."""
+    run(Config.from_environment())
+
+
+if __name__ == "__main__":
+    main()
