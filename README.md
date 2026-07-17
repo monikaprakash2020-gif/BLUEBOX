@@ -11,25 +11,65 @@ account, or remote service.
 - Ollama installed and running
 - The default model: `deepseek-r1:1.5b`
 
-Install Ollama from <https://ollama.com/download>, then prepare the model:
+Install Ollama from <https://ollama.com/download>, then start Ollama:
 
 ```sh
 ollama serve
-ollama pull deepseek-r1:1.5b
 ```
+
+OxGPT uses Ollama for all model operations and validates the configured model
+when `oxgpt start` runs.
 
 ## Install
 
-From a clone of this repository:
+### Linux
+
+Install Python, Git, and Ollama using your distribution's package manager and
+the [Ollama installation guide](https://ollama.com/download). Then clone and
+install OxGPT:
 
 ```sh
+mkdir OxGPT
+cd OxGPT
+git clone https://github.com/monikaprakash2020-gif/OxGPT.git OxGPT_v1.0
+cd OxGPT_v1.0
+python3 -m venv .venv
+. .venv/bin/activate
 python3 -m pip install .
 ```
 
-For a user-local install (useful on Termux):
+### Termux
+
+Install the base tools from F-Droid or the official Termux source, then clone
+and install OxGPT:
 
 ```sh
-python3 -m pip install --user .
+pkg update
+pkg install git python
+mkdir OxGPT
+cd OxGPT
+git clone https://github.com/monikaprakash2020-gif/OxGPT.git OxGPT_v1.0
+cd OxGPT_v1.0
+python3 -m pip install .
+```
+
+After installation, start a new Termux shell or run `hash -r` so the shell
+refreshes its command lookup:
+
+```sh
+hash -r
+oxgpt --version
+```
+
+Ollama must also be installed and running locally before starting OxGPT. If
+your Termux setup does not provide an `ollama` executable, use a Linux
+environment on the same device that does and make that executable available
+on your `PATH`.
+
+Verify the installation:
+
+```sh
+oxgpt --version
 ```
 
 ## Usage
