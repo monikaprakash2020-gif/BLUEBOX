@@ -9,7 +9,7 @@ account, or remote service.
 - Python 3.9+
 - Linux or Termux
 - Ollama installed and running
-- The default model: `gemma3:270m`
+- The default model: `gemma3:270m-it-qat`
 
 Install Ollama from <https://ollama.com/download>, then start Ollama:
 
@@ -90,7 +90,7 @@ All settings are optional environment variables:
 
 | Variable | Default | Purpose |
 | --- | --- | --- |
-| `OXGPT_MODEL` | `gemma3:270m` | Ollama model name |
+| `OXGPT_MODEL` | `gemma3:270m-it-qat` | Ollama model name |
 | `OXGPT_HOST` | `127.0.0.1` | Local bind address |
 | `OXGPT_PORT` | `8765` | Local service port |
 | `OXGPT_STATE_DIR` | `$XDG_STATE_HOME/oxgpt` or `~/.local/state/oxgpt` | PID and log directory |

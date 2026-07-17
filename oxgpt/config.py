@@ -24,7 +24,7 @@ class Config:
             )
         ).expanduser()
         return cls(
-            model=os.environ.get("OXGPT_MODEL", "gemma3:270m"),
+            model=os.environ.get("OXGPT_MODEL", "gemma3:270m-it-qat"),
             host=os.environ.get("OXGPT_HOST", "127.0.0.1"),
             port=int(os.environ.get("OXGPT_PORT", "8765")),
             state_dir=state_root,
