@@ -11,12 +11,14 @@ account, or remote service.
 - Ollama installed and running
 - The default model: `deepseek-r1:1.5b`
 
-Install Ollama from <https://ollama.com/download>, then prepare the model:
+Install Ollama from <https://ollama.com/download>, then start Ollama:
 
 ```sh
 ollama serve
-ollama pull deepseek-r1:1.5b
 ```
+
+OxGPT uses Ollama for all model operations and validates the configured model
+when `oxgpt start` runs.
 
 ## Install
 
