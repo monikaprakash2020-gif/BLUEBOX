@@ -50,7 +50,15 @@ mkdir OxGPT
 cd OxGPT
 git clone https://github.com/monikaprakash2020-gif/OxGPT.git OxGPT_v1.0
 cd OxGPT_v1.0
-python3 -m pip install --user .
+python3 -m pip install .
+```
+
+After installation, start a new Termux shell or run `hash -r` so the shell
+refreshes its command lookup:
+
+```sh
+hash -r
+oxgpt --version
 ```
 
 Ollama must also be installed and running locally before starting OxGPT. If
