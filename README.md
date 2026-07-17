@@ -9,7 +9,7 @@ account, or remote service.
 - Python 3.9+
 - Linux or Termux
 - Ollama installed and running
-- The default model: `deepseek-r1:1.5b`
+- The default model: `gemma:2b`
 
 Install Ollama from <https://ollama.com/download>, then start Ollama:
 
@@ -90,7 +90,7 @@ All settings are optional environment variables:
 
 | Variable | Default | Purpose |
 | --- | --- | --- |
-| `OXGPT_MODEL` | `deepseek-r1:1.5b` | Ollama model name |
+| `OXGPT_MODEL` | `gemma:2b` | Ollama model name |
 | `OXGPT_HOST` | `127.0.0.1` | Local bind address |
 | `OXGPT_PORT` | `8765` | Local service port |
 | `OXGPT_STATE_DIR` | `$XDG_STATE_HOME/oxgpt` or `~/.local/state/oxgpt` | PID and log directory |

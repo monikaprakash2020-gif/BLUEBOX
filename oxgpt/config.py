@@ -24,7 +24,7 @@ class Config:
             )
         ).expanduser()
         return cls(
-            model=os.environ.get("OXGPT_MODEL", "deepseek-r1:1.5b"),
+            model=os.environ.get("OXGPT_MODEL", "gemma:2b"),
             host=os.environ.get("OXGPT_HOST", "127.0.0.1"),
             port=int(os.environ.get("OXGPT_PORT", "8765")),
             state_dir=state_root,
