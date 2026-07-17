@@ -9,7 +9,7 @@ class ConfigTests(unittest.TestCase):
     def test_defaults_are_local_and_model_is_configurable(self) -> None:
         with patch.dict(os.environ, {}, clear=True):
             config = Config.from_environment()
-        self.assertEqual(config.model, "gemma:2b")
+        self.assertEqual(config.model, "gemma3:270m")
         self.assertEqual(config.host, "127.0.0.1")
         self.assertEqual(config.port, 8765)
 
